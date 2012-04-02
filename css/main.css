@@ -29,7 +29,7 @@ blockquote .author {
   padding-top: 10px;
   font-style: italic;
 }
-blockquote .openq, blockquote, .closeq {
+blockquote .openq, blockquote .closeq {
   font-family: Georgia;
 }
 blockquote .openq {
