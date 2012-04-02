@@ -50,8 +50,7 @@ blockquote .closeq {
   margin: 0;
 }
 #graph {
-  width: 480px;
-  margin: 0 auto 0 auto;
+  width: 100%;
 }
 .date {
   font-style: italic;

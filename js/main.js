@@ -9,8 +9,7 @@ $(document).ready(function() {
       renderTo: 'graph',
       margin: [0, 0, 0, 0],
       plotBorderWidth: 0,
-      plotShadow: false,
-      width: "400"       
+      plotShadow: false  
     },
     title: {
       align: "center",
