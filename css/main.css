@@ -76,7 +76,7 @@ blockquote .closeq {
 }
 
 /* Use stacked tabs style for menu when on mobile */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav-container {
     position: static;
     top: auto;
@@ -110,3 +110,29 @@ blockquote .closeq {
               border-radius: 4px 4px 0 0;
   }
 }
+
+@media print {
+  body {
+    margin-top: 0;
+    font-size: 13px;
+  }
+  #header h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  #graph {
+    display: none;
+  }
+  .nav-container {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
