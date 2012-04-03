@@ -133,7 +133,7 @@
     position: static;
   }
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     padding-left: 20px;
     padding-right: 20px;
@@ -182,7 +182,7 @@
     width: auto;
   }
 }
-@media not print and (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
     *zoom: 1;
