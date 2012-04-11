@@ -112,21 +112,26 @@ blockquote .closeq {
 }
 
 @media print {
-  .only_web {
-    display: none;
-  }
   body {
+    font-family: Georgia;
     margin-top: 0;
     font-size: 14px;
   }
+  header h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .only_web {
+    display: none;
+  }
   p {
+    font-family: Georgia;
     font-size: 14px;
   }
   #header h1 {
     font-size: 26px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   h3 {
     font-size: 16px;
