@@ -1,9 +1,13 @@
 $(document).ready(function() {
+
+  // More jobs link action
   $("#jobs-more-link").click(function (event) {
     $("#jobs-more").slideDown();
     $("#jobs-more-link").hide();
     event.preventDefault();
   });
+
+  // Pie chart
   new Highcharts.Chart({
     chart: {
       renderTo: 'graph',
@@ -40,5 +44,22 @@ $(document).ready(function() {
           enabled: true
        }
     }]
+  });
+  // Latest commit to this page
+  $.ajax({
+    url: 'https://api.github.com/repos/hannu/hannu.github.com/commits', 
+    data: {
+      per_page: 1
+    },
+    dataType: "jsonp",
+    type: "get"
+  }).success(function(response) {
+    if (response.data.length > 0) {
+      var date = new Date(response.data[0].commit.committer.date);
+      var e = $('<p />').html('Latest change '+
+        date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear() + ': ' +
+        '<a href="https://github.com/hannu/hannu.github.com/commit/'+response.data[0].sha+'">'+response.data[0].commit.message+'</a>');
+      $("#git-details").append(e);
+    }
   });
 });

@@ -53,6 +53,9 @@ blockquote .closeq {
 #graph {
   width: 100%;
 }
+#git-details {
+  color: #888;
+}
 .date {
   font-style: italic;
   margin-left: 15px;
