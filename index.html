@@ -25,7 +25,7 @@
       <header>
         <h1>Hannu Pelkonen</h1>
         <p class="lead">Web Developer and Designer</p>
-        <div class="nav-container only_web">
+        <div class="nav-container only_screen">
           <ul class="nav nav-pills">
             <li><a href="#profile">Profile</a></li>
             <li><a href="#technical-skills">Technical Skills</a></li>
@@ -59,8 +59,11 @@
       </div>
       <div class="span8">
         <h3>Core Expertise</h3>
-        <div class="row-fluid only_web">
-          <div id="graph">
+        <div class="row-fluid">
+          <div id="graph" class="only_screen">
+          </div>
+          <div class="only_print">
+            <h4>Ruby (RoR), JavaScript, HTML5, CSS3, Python, WebSecurity, etc.
           </div>
         </div>
         <div class="row-fluid">
@@ -159,7 +162,7 @@
             <p>Maintaining servers and developing <a href="http://www.mil.fi">mil.fi</a> site. Military service. <span class="info">(LAMP stack)</span></p>
           </div>
         </div>
-        <p class="only_web"><a id="jobs-more-link" href="#">Show older jobs</a></p>
+        <p class="only_screen"><a id="jobs-more-link" href="#">Show older jobs</a></p>
       </div>
     </div>
     <div class="row-fluid section">
@@ -178,7 +181,8 @@
       </div>
       <div class="span8">
         <h3>Open source / pet projects</h3>
-        <p>See my <a href="http://github.com/hannu">GitHub page</a></p>
+        <p class="only_screen">See my <a href="http://github.com/hannu">GitHub page</a></p>
+        <p class="only_print">See my GitHub page <a href="http://github.com/hannu">http://github.com/hannu</a></p>
         <h3>Success in Assembly multimedia festivals</h3>
         <p>1st place in browser demo competition 2006<br/>
 2nd place in browser demo competition 2004<br/>
@@ -197,7 +201,7 @@
     </div>
     <!-- Footer
     ================================================== -->
-    <footer class="footer only_web">
+    <footer class="footer only_screen">
       <p class="pull-right"><a href="#">Back to top</a></p>
       <p><a href="https://github.com/hannu/hannu.github.com">View this page in GitHub</a></p>
     </footer>

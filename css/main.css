@@ -75,6 +75,12 @@ blockquote .closeq {
   border-radius: 4px;
 }
 
+@media screen {
+  .only_print {
+    display: none;
+  }
+}
+
 /* Use stacked tabs style for menu when on mobile */
 @media screen and (max-width: 768px) {
   .nav-container {
@@ -120,7 +126,7 @@ blockquote .closeq {
   header h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
-  .only_web {
+  .only_screen {
     display: none;
   }
   p {
