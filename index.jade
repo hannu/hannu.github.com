@@ -1,0 +1,227 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Hannu Pelkonen
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='keywords', content='Hannu Pelkonen resume website developer designer')
+    meta(name='description', content='Website developer and designer Hannu Pelkonen')
+    meta(name='author', content='Hannu Pelkonen')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', type='text/javascript')
+    // Le styles
+    link(href='css/ext/bootstrap.min.css', rel='stylesheet')
+    link(href='css/ext/bootstrap-responsive.css', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet')
+    // Le HTML5 shim, for IE6-8 support of HTML5 elements 
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+  body(data-spy='scroll', data-target='.nav-container', data-offset='50')
+    .container
+      // = Header ====
+      .row-fluid
+        header
+          h1 Hannu Pelkonen
+          p.lead Web Developer and Designer
+          .nav-container.only_screen
+            ul.nav.nav-pills
+              li
+                a(href='#profile') Profile
+              li
+                a(href='#technical-skills') Technical Skills
+              li
+                a(href='#other-buzzwords') Other Buzzwords
+              li
+                a(href='#work-experience') Work Experience
+              li
+                a(href='#education') Education
+              li
+                a(href='#other') Other
+              li
+                a(href='#contact') Contact me!
+      // = Content ====
+      .row-fluid.section
+        .span4
+          h2#profile Profile
+        .span8
+          h3 Web Developer and Designer with fresh visions of the future web applications
+          blockquote
+            | Hannu is a strong-willed individual who cares deeply about the quality of his work and equally so of his team's work. He is a versatile developer and doesn't lose sight of the bigger picture.
+            p.openq „
+            p.author -Mikael Roos, CEO, Nodeta
+            p.closeq ”
+      .row-fluid.section
+        .span4
+          h2#technical-skills Technical Skills
+        .span8
+          h3 Core Expertise
+          .row-fluid
+            #graph.only_screen
+            .only_print
+              h4
+                | Ruby (RoR), JavaScript, HTML5, CSS3, Python, WebSecurity, etc.
+          .row-fluid
+            .span4
+              h3 Web Developer
+              p
+                | Writes standard, clean, safe and tested code language independently. BDD is a good friend.
+            .span4
+              h3 Web Designer
+              p
+                | Excellent knowledge of the latest web technologies like HTML5 and CSS3 and always willing to learn new.
+            .span4
+              h3 ScrumMaster
+              p
+                | Experience as working as team ScrumMaster. Versatile and smiling ScrumMaster who makes that 15 minute standing more enjoyable.
+      .row-fluid.section
+        .span4
+          h2#other-buzzwords Other Buzzwords
+        .span8
+          .row-fluid
+            .span3
+              p GIT
+            .span3
+              p Backbone.js
+            .span3
+              p SQL
+            .span3
+              p RSpec
+          .row-fluid
+            .span3
+              p JUnit
+            .span3
+              p Responsive Design
+            .span3
+              p MongoDB
+            .span3
+              p CouchDB
+      .row-fluid.section
+        .span4
+          h2#work-experience Work Experience
+        .span8
+          .subsection
+            h3 SC5
+            .pull-right.date Current
+            h4 Senior Developer
+          .subsection
+            h3 Digia Plc
+            .pull-right.date 2011
+            h4 Software Engineer
+            p Developing web products (RoR, HTML5, JS)
+          .subsection
+            h3 Nodeta Oy
+            .pull-right.date Summer 2010
+            h4 Web Software Developer, Scrum Master
+            p
+              | Developing 
+              a(href='http://flowdock.com') Flowdock 
+              | product
+              span.info (RoR, HTML5, JS, MongoDB)
+          .subsection
+            h3 Revlis Oy
+            h4 Web Software Designer and Developer
+            .pull-right.date 2010
+            p
+              | Designing and developing 
+              a(href='http://silvergym.fi') SilverGym 
+              | site. Advanced custom made enrollment system with real-time SMS notifications
+              span.info (RoR with Radiant, HTML5)
+          .subsection
+            h3 Nodeta Oy
+            .pull-right.date Summer 2009
+            h4 Web Software Developer, Scrum Master
+            p
+              | Developing 
+              a(href='http://flowdock.com') Flowdock 
+              | product
+              span.info (RoR, HTML5, JS, Scala, Cassandra)
+          .subsection
+            h3 Nordpic Production
+            .pull-right.date 2009
+            h4 Web Software Developer
+            p
+              | Developing 
+              a(href='http://webteatteri.fi') Web-teatteri 
+              | site.
+              span.info (RoR)
+          #jobs-more(style='display: none;')
+            .subsection
+              h3 Nodeta Oy
+              .pull-right.date Summer 2008
+              h4 Web Software Developer, Scrum Master
+              p
+                | Web application development
+                span.info (RoR)
+            .subsection
+              h3 Palnet Oy
+              .pull-right.date Summer 2007
+              h4 Web Software Designer and System Administrator
+              p
+                | Designing and developing
+                a(href='http://palnet.fi') Palnet
+                | website and maintaining servers
+                span.info (LAMP stack)
+            .subsection
+              h3 Palnet Oy
+              .pull-right.date Summer 2009
+              h4 Web Developer
+              p
+                | Designing and developing palnet.fi website
+                span.info (LAMP stack)
+            .subsection.last
+              h3 Finnish Defense Forces
+              .pull-right.date August 2005 - April 2006
+              h4 Web Developer
+              p
+                | Maintaining servers and developing 
+                a(href='http://www.mil.fi') mil.fi
+                | site. Military service.
+                span.info (LAMP stack)
+          p.only_screen
+            a#jobs-more-link(href='#') Show older jobs
+      .row-fluid.section
+        .span4
+          h2#education Education
+        .span8
+          h3 Aalto University School of Science and Technology
+          h4 Computer Science and Engineering
+          p Start year 2006, expected graduation in 2012
+      .row-fluid.section
+        .span4
+          h2#other Other
+        .span8
+          h3 Open source / pet projects
+          p.only_screen
+            | See my 
+            a(href='http://github.com/hannu') GitHub page
+          p.only_print
+            | See my GitHub page
+            a(href='http://github.com/hannu') http://github.com/hannu
+          h3 Success in Assembly multimedia festivals
+          p
+            | 1st place in browser demo competition 2006
+            br
+            | 2nd place in browser demo competition 2004
+            br
+            | 2nd place in flash demo competition 2003
+      .row-fluid.section
+        .span4
+          h2#contact Contact me!
+        .span8
+          h3 Hannu Pelkonen
+          p
+            b
+              a(href='mailto:hannu@hannu.biz') hannu@hannu.biz
+          p
+            b +358 503413251
+      // = Footer ====
+      footer.footer.only_screen
+        p.pull-right
+          a(href='#') Back to top
+        #git-details
+          p
+            a(href='https://github.com/hannu/hannu.github.com') View this page in GitHub
+    // Le javascript
+    // Placed at the end of the document so the pages load faster 
+    //
+    script(src='js/ext/highcharts.min.js')
+    script(src='js/main.js')
