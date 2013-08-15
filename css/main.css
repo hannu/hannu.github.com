@@ -23,9 +23,11 @@ header h1 {
   line-height: 1;
 }
 h2 {
+  page-break-after: avoid;
   font-weight: 400;
 }
 header h2 {
+  page-break-after: avoid;
   font-weight: 200;
 }
 h2, h3 {
@@ -41,6 +43,7 @@ section {
   border-bottom: 1px solid #CCC;
 }
 section section {
+  page-break-inside: avoid;
   margin-bottom: 20px;
   border: none;
 }
@@ -96,6 +99,9 @@ nav {
 }
 #git-details {
   color: #888;
+}
+#jobs-more {
+  display: none;
 }
 .date {
   font-style: italic;
@@ -162,6 +168,7 @@ nav {
   }
 }
 
+
 @media print {
   body {
     font-family: Georgia;
@@ -186,6 +193,9 @@ nav {
   }
   h3 {
     font-size: 16px;
+  }
+  blockquote {
+    border: none;
   }
 }
 
