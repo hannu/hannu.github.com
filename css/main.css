@@ -174,6 +174,7 @@ nav {
     font-family: Georgia;
     margin-top: 0;
     font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   header h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -188,11 +189,12 @@ nav {
   #header h1 {
     font-size: 26px;
   }
-  h2 {
-    font-size: 22px;
+  h2, h3 {
+    font-size: 22.5px;
+    line-height: 30px;
   }
   h3 {
-    font-size: 16px;
+    font-weight: 200;
   }
   blockquote {
     border: none;
